@@ -1,0 +1,46 @@
+  body {
+    display: block;
+    margin: 8px;
+  }
+
+  .card {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 260px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding-top: 16px;
+  }
+  .card::before {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    content: "9";
+  }
+  .card::after {
+    position: absolute;
+    content: "X";
+    top: 3px;
+    left: 8px;
+    color:#0000005c;
+  }
+
+  h4{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 24px;
+  }
